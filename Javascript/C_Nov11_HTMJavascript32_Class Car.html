@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>Javascript Class</h1>
+<h>How to use Javascript class</h2>
+<p id ="demo"></p>
+
+<script>
+    class Car{
+        constructor (name,year){
+            this.name = name;
+            this.year = year;
+        }
+    }
+
+const mycar = new Car("Ford",2014);
+document.getElementById("demo").innerHTML = mycar.name+ " "+mycar.year;
+</script>
+
+</body>
+</html>

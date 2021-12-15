@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>Javascript Class</h1>
+<h>How to use Javascript class</h2>
+<p id ="demo"></p>
+
+<script>
+    class Employee{
+        constructor (Id,Fname,Lname,Sal){
+            this.id = Id;
+            this.Firstname = Fname;
+            this.Lastname = Lname;
+            this.Salary = Sal;
+        }
+    }
+
+const myEmployee = new Employee("10001","Nikhil","Choukikar",500000);
+document.getElementById("demo").innerHTML = myEmployee.id +" "+myEmployee.Firstname +" "+myEmployee.Lastname +" "+myEmployee.Salary +" " ;
+</script>
+
+</body>
+</html>

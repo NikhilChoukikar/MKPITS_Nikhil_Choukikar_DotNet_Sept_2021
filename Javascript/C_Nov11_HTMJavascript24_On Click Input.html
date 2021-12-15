@@ -1,0 +1,76 @@
+<htmL>
+    <head>
+    </head>
+    <body>
+
+        <h1 id ="A"></h1>
+        <h2 id ="B"></h2>
+        <h3 id ="C"></h3>
+        <form>
+            <table width = 300px>
+                <caption>Arithmatic Operations</caption>
+
+                <tr><td>Number a</td><td><input type ="text" id ="a" value="5"></td></tr>
+                <tr><td>Number b</td><td><input type ="text" id ="b" value="5"></td></tr>
+                
+                <tr><td>Answer</td><td><output type ="text" id ="ans" ></td></tr>
+                <tr>
+
+                    <td>
+                        <input type ="Button" value ="Add" onclick="Add()";>
+                    </td>
+
+                    <td>
+                        <input type ="Button" value ="Sub" onclick="Sub()";>
+                    </td>
+                    
+                    <td>
+                        <input type ="Button" value ="Multiply" onclick="Multiply()";>
+                    </td>
+
+                    <td>
+                        <input type ="Button" value ="Divide" onclick="Divide(A,B)";>
+                    </td>
+                </tr>
+            
+            </table>
+        </form>
+
+        <script>
+             
+         
+            function Add()
+            {
+                A=parseInt(document.getElementById("a").value);
+                A=(parseInt(A));
+                B=document.getElementById("b").value;
+                B=(parseInt(B));
+                alert("Addition is " +(A+B));
+                document.getElementById("ans").innerHTML=(A+B);
+                
+            }
+            function Sub()
+            {
+                A=parseInt(document.getElementById("a").value); //"12"
+                A=(parseInt(A));
+                B=document.getElementById("b").value; //"6"
+                B=(parseInt(B));
+                document.getElementById("ans").innerHTML=(A-B);
+                
+            }
+            function Multiply()
+            {
+                A=parseInt(document.getElementById("a").value);
+                A=(parseInt(A));
+                B=document.getElementById("b").value;
+                B=(parseInt(B));
+                document.getElementById("ans").innerHTML=(A*B);
+                
+            }
+            function Divide(a,b)
+            {
+                alert("Division is" +(a/b));
+            }
+        </script>
+        
+    </body>

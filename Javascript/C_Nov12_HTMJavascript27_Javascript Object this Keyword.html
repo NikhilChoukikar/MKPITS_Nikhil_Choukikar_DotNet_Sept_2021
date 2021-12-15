@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2> Javascript Objects</h2>
+
+        <p id ="demo"></p>
+        <p id ="demo1"></p>
+            <script>
+                const employee = {
+                    id:10001,
+                    firstname:"Bill",
+                    lastname:"Clinton",
+                    Salary:35000,              // sky blue shows property name
+                    fullname :function()       // light yellow color shows function name
+                    {
+                        return this.firstname+" "+this.lastname;
+                    }
+                    GrossSalary :function()
+                    {
+                        return this.Salary+0.7*Salary+750;
+                    }
+                };
+                document.getElementById("demo").innerHTML="Employee name is "
+                                                           +employee.fullname();
+                document.getElementById("demo1").innerHTML="Total Salary is "
+                                                           +employee.GrossSalary();                                           
+            </script>
+    </body>
+</html>

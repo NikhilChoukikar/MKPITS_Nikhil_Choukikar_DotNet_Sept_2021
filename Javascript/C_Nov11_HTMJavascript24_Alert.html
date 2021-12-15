@@ -1,0 +1,35 @@
+<htmL>
+    <head>
+    </head>
+    <body>
+
+        <h1 id ="A"></h1>
+        <h2 id ="B"></h2>
+        <h3 id ="C"></h3>
+        <h4 id ="D"></h4>
+       <script>
+            document.getElementById("A").innerHTML="Addition = "+Add(12,2);
+            document.getElementById("B").innerHTML="Subtraction = "+Sub(12,2);
+            document.getElementById("C").innerHTML="Multiplication of two numbers = "+Multiply(12,2);
+            document.getElementById("D").innerHTML="Division of two numbers = "+Divide(12,2);
+
+
+            function Add(a,b)
+            {
+                alert("Addition is " +(a+b));
+            }
+            function Sub(a,b)
+            {
+                alert("Subtraction is" +(a-b));
+            }
+            function Multiply(a,b)
+            {
+                alert("Multiplication is" +(a*b));
+            }
+            function Divide(a,b)
+            {
+                alert("Division is" +(a/b));
+            }
+        </script>
+        
+    </body>

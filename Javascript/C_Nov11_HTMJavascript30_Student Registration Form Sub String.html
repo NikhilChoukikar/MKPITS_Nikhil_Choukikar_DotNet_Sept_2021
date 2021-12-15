@@ -1,0 +1,47 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form>
+            <table width="300px" border="1"><caption>Student Registration Form</caption>
+            
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type = "text" id ="Fname"></td>
+                    <td><input type = "text" id ="Mname"></td>
+                    <td><input type = "text" id ="Lname"></td>
+
+                </tr>
+
+                <tr>
+                      <td align ="center"><input type= "radio" id="r1" name="r" value="Male" >Male</td>
+                      <td></td>
+                      <td align ="center"><input type= "radio" id="r2" name="r" value="Female">Female</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" align ="center"><input type= "button" value="Submit" onclick="personal_info()"></td>
+                </tr>                
+            </table>
+        </form>
+        <script>
+            function personal_info()
+            {
+               Firstname=document.getElementById("Fname").value.toUpperCase().substring(0,1);
+               Lastname=document.getElementById("Lname").value.toUpperCase().substring(0,1);
+               Middlename=document.getElementById("Mname").value.toUpperCase().substring(0,1);
+               gender=document.getElementById("r1").value;
+               alert(Firstname+"."+Middlename+"."+Lastname+ " " +gender);
+
+
+
+            }
+        </script>
+    </body>
+    </html>
