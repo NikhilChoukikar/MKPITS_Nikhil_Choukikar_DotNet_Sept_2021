@@ -1,0 +1,28 @@
+﻿@model E_Commerce_Login.Models.UserProfile
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<html>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <table>
+            <tr><td>UserName:</td><td>@Html.TextBox("UserName")</td> </tr>
+            <tr><td>Password:</td><td>@Html.TextBox("Password")</td> </tr>
+
+            <tr><td>:</td><td><input type="Submit" value="Submit" /></td> </tr>
+            <tr>
+                <td class="text-danger">
+                    @ViewBag.Message;
+
+                    @Html.ActionLink("ForgotPassword","ChangePassword", "Home");
+                </td>              
+            </tr>
+            
+        </table>}
+
+</body>
+</html>
